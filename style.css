@@ -1,13 +1,13 @@
 body {
   box-sizing: border-box;
-  font-size: 16px;
+  /* font-size: 16px; */
   font-weight: normal;
   text-decoration: none;
   margin: 0;
   padding: 0;
 }
 
-img, a {
+img, a, p {
   display: block;
 }
 
@@ -170,13 +170,15 @@ li {
 .stronge__title {
   color: #EC2F72;
   display: block;
+  font-family: "游ゴシック体";
   font-size: 1.875vw;
+  -ms-transform: scale(0.3);
+  font-weight: bold;
   position: absolute;
-  top: 10%;
-  left: 20%;
-  transform: translate(50%,25%);
-  width: 20%;
-  height: auto;  
+  top: -1.4598540145985%;
+  left: 35.46875%;
+  /* width: 29.140625%; */
+  width: 60%;
   z-index: 2;
 }
 
@@ -185,24 +187,46 @@ li {
   display: block;
   font-size: 1.25vw;
   position: absolute;
-  top: 25%;
-  left: 20%;
-  transform: translate(50%,25%);
-  width: 60%;
+  top: 27.7372262%;
+  left: 23.4375%;
+  width: 53.125%;
   height: auto;  
   z-index: 2;
 }
 
 
-.stronge__content {
+.stronge__content__1 {
   color: #404040;
   display: block;
   font-size: 1.5625vw;
   position: absolute;
-  top: 70%;
-  left: 20%;
-  transform: translate(50%,25%);
-  width: 50%;
+  top: 76.642336%;
+  left: 25.859375%;
+  width: 20%;
+  height: auto;  
+  z-index: 2;
+}
+
+.stronge__content__2 {
+  color: #404040;
+  display: block;
+  font-size: 1.5625vw;
+  position: absolute;
+  top: 76.642336%;
+  left: 44.609375%;
+  width: 20%;
+  height: auto;  
+  z-index: 2;
+}
+
+.stronge__content__3 {
+  color: #404040;
+  display: block;
+  font-size: 1.5625vw;
+  position: absolute;
+  top: 76.642336%;
+  left: 63.359375%;
+  width: 20%;
   height: auto;  
   z-index: 2;
 }
@@ -263,9 +287,9 @@ li {
   display: block;
   font-size: 1.875vw;
   position: absolute;
-  top: 5%;
-  left: 30%;
-  width: 50%;
+  top: 6.666666666%;
+  left: 32.03125%;
+  width: 60%;
   height: auto;  
 }
 
@@ -280,15 +304,72 @@ li {
   height: auto;  
 }
 
+.type__circle {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  padding-top: 1.25%;
+  /* position: absolute;
+  top: 90%;
+  left: 15%; */
+  width: 1.25%;
+  z-index: 2;
+}
+
+.type__circle:nth-of-type(1) {
+  position: absolute;
+  top: 93.3333333333333%;
+  left: 43.75%;
+}
+
+.type__circle:nth-of-type(2) {
+  position: absolute;
+  top: 93.3333333333333%;
+  left: 46.5625%;
+}
+
+.type__circle:nth-of-type(3) {
+  background-color: #FFE200;
+  position: absolute;
+  top: 93.3333333333333%;
+  left: 49.375%;
+}
+
+.type__circle:nth-of-type(4) {
+  position: absolute;
+  top: 93.3333333333333%;
+  left: 52.1875%;
+}
+
+.type__circle:nth-of-type(5) {
+  position: absolute;
+  top: 93.3333333333333%;
+  left: 55%;
+}
+
+
 /* why  */
 
 .c-why {
-  background-image: url(./why_bg@2x.png);
-  background-size: 111.875%;
+  /* background-image: url(./why_bg@2x.png);
+  background-size: 111.875%; */
   padding-bottom: 53.125%;
-  text-align: center;
   position: relative;
 }
+
+.why__bg {
+  position: absolute;
+  top: 0;
+  left: -3.828125%;
+  width: 111.875%;
+  height: auto;
+  /* overflow: hidden; */
+  object-fit: cover; 
+}
+
+/* .why__bg::after {
+  border: 5px solid black;
+  overflow: hidden;
+} */
 
 .why__stage {
   background-color: #FFFFFF;
@@ -321,22 +402,21 @@ li {
   display: block;
   font-size: 1.875vw;
   position: absolute;
-  top: 10%;
-  left: 35%;
-  /* transform: translate(50%,25%); */
-  width: 50%;
+  top: 17.0588235294118%;
+  left: 33.59375%;
+  width: 60%;
   height: auto; 
 }
 
 .why__text {
   color: #404040;
   display: block;
+  font-family: "yugothic";
   font-size: 1.25vw;
   position: absolute;
-  top: 30%;
-  left: 25%;
-  /* transform: translate(50%,25%); */
-  width: 50%;
+  top: 40.5882352941176%;
+  left: 23.4375%;
+  width: 53.125%;
   height: auto; 
 }
 
@@ -347,51 +427,83 @@ li {
   background-image: url(./contact_bg@2x.png);
   background-size: 100%;
   padding-bottom: 54.6875%;
-  margin-top: 5%;
+  margin-top: 11.875%;
   position: relative;
   z-index: 1;
 }
 
 .contact__banner {
   position: absolute;
-  top: -15%;
-  left: 30%;
-  /* transform: translate(50%,25%); */
-  width: 40%;
-  height: auto; 
-  z-index: 1;
-}
-
-.contact__button {
-  position: absolute;
-  top: 85%;
-  left: 40%;
-  /* transform: translate(50%,25%); */
-  width: 20%;
+  top: -16%;
+  left: 30.625%;
+  width: 38.75%;
   height: auto; 
   z-index: 1;
 }
 
 .contact__copy {
   position: absolute;
-  top: 10%;
-  left: 25%;
-  /* transform: translate(50%,25%); */
-  width: 50%;
+  top: 11.4285714285714%;
+  left: 26.5625%;
+  width: 46.875%;
+  height: auto; 
+}
+
+.contact__button {
+  position: absolute;
+  top: 88.5714285714286%;
+  left: 42.1875%;
+  width: 15.625%;
   height: auto; 
   z-index: 1;
 }
 
-
-.contact__form {
+.contact__item {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25vw;
   position: absolute;
-  top: 40%;
-  left: 20%;
-  /* transform: translate(50%,25%); */
-  width: 60%;
-  height: auto; 
+  top: 40.5742857142857%;
+  left: 23.4375%;
+  width: 6.875%;
   z-index: 2;
 }
+
+.contact__item p:nth-child(2) {
+  margin-top: 44%;
+}
+
+.contact__item p:nth-child(n + 3) {
+  margin-top: 31%;
+}
+
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 35.4285714285714%;
+  left: 31.609375%;
+  width: 44.6875%;
+  height: 41.1428571428571%;
+  z-index: 2;
+}
+
+.contact__form__area {
+  background-color: #FFFFFF;
+  border: 1px solid #707070;
+  height: 27.77777777777778%;
+  resize: none;
+}
+
+.contact__form__text {
+  background-color: #FFFFFF;
+  border: 1px solid #707070;
+  height: 12.5%;
+  margin-top: 2.2857142857143%;
+}
+
 
 .contact__title {
   color: #FFE200;
@@ -411,10 +523,9 @@ li {
   display: block;
   font-size: 1.25vw;
   position: absolute;
-  top: 25%;
-  left: 25%;
-  /* transform: translate(50%,25%); */
-  width: 50%;
+  top: 26.8571428571429%;
+  left: 23.4375%;
+  width: 53.125%;
   height: auto; 
   z-index: 2;
 }
@@ -424,10 +535,9 @@ li {
   display: block;
   font-size: 1.25vw;
   position: absolute;
-  top: 75%;
-  left: 25%;
-  /* transform: translate(50%,25%); */
-  width: 50%;
+  top: 80%;
+  left: 23.4375%;
+  width: 53.125%;
   height: auto; 
   z-index: 2;
 }
@@ -439,3 +549,31 @@ li {
   background-size: 100%;
   padding-bottom: 12.1875%;
 }
+
+
+/* その他 */
+
+/* 
+.ex__bg {
+  background-color: cornflowerblue;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  width: 44.6875%;
+  z-index: 2;
+}
+
+.contact__form__area {
+  background-color: #FFFFFF;
+  border: 1px solid #707070;
+  resize: none;
+}
+
+.contact__form__text {
+  background-color: #FFFFFF;
+  border: 1px solid #707070;
+  margin-top: 22.859133190962%;
+} */
+
